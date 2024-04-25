@@ -1,0 +1,145 @@
+﻿header{
+    z-index: 1;
+}
+
+.menu-lateral{
+    height: auto;
+}
+
+.contenedor{
+    height: auto;
+}
+
+.text-Left {
+    text-align: left
+}
+
+.table-Med {
+    border-radius: 20px;
+    margin: 40px;
+    background-color: white;
+    padding: 20px;
+}
+
+.bg-color {
+    background-color: white;
+    border-radius: 20px;
+    margin: 4%;
+}
+
+.block-tables {
+    position: initial;
+    background-color: #F1F0EE;
+    width: 100%;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+}
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.chart {
+    display: flex !important;
+    width: 100% !important;
+    height: 550px !important;
+    padding: 2%;
+}
+.form-row {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-container {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.inputs-chart {
+    width: 50% !important;
+}
+.input-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.btn-container {
+    width:50%;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+}
+.dateBlocks {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.list-users{
+    background-color: #F1F0EE; /* Cambiado color de fondo */
+    color: #333; /* Cambiado color del texto */
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.table {
+    width: 50%;
+}
+
+.earnings {
+    border-radius: 20px;
+    background-color: white;
+    width: 48%;
+    padding: 1%;
+    height: 34vh;
+    text-align: center;
+}
+
+
+.earnings-int {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.earnings-int2 {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-earnings {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border-color: #F1F0EE;
+}
+
+.table-earnings th, .table-earnings td {
+    border: 1px solid #F1F0EE;
+    padding: 8px;
+    text-align: left;
+    background-color: #fff;
+}

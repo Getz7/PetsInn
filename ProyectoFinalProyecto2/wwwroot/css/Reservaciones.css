@@ -1,0 +1,141 @@
+﻿.input{
+    margin: 0; 
+}
+
+
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+}
+h1 {
+    margin: 30px;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px !important;
+    text-align: center;
+}
+
+.content{
+    margin: 40px;
+}
+.container2 {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dates {
+    display: flex;
+    justify-content: end;
+    margin: 30px 0 20px 0;
+    align-items: center;
+}
+
+.dates label{
+    margin-right: 5px;
+}
+
+.date{
+    margin: 0 10px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+th, td {
+    border: solid var(--bg-color) 2px;
+    padding: 6px;
+}
+table form button, button {
+    margin: 0;
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-trash {
+    color: var(--color-brown);
+    font-size: 18px;
+}
+
+/*Pop up*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    z-index: 999; /* Asegura que esté por encima del resto de los elementos */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.popup-top {
+    background-color: #97533E;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+    .popup-top img {
+        max-width: 100%;
+    }
+
+.popup-bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+    .popup-bottom h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .popup-bottom p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+    
+    .buttons .cancel {
+        color: #795548; /* Color del texto para el botón Cancelar */
+        background-color: transparent; /* Fondo transparente */
+        border: 2px solid #795548; /* Borde del botón */
+    }
+
+    .buttons .accept {
+        color: #fff; /* Color del texto para el botón Aceptar */
+        background-color: #795548; /* Color de fondo para el botón Aceptar */
+        border: none; /* Sin borde */
+    }

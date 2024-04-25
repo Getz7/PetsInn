@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "_LayoutEmployee";
+}
+
+@section Styles{
+    <link href="~/css/GroupConfigurationUpdate.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/GroupConfigurationUpdate.js"></script>
+}
+<title>Configuración de Grupo</title>
+
+<div class="group-container">
+
+    <div class="title-container">
+
+       <h1 id="group-name">Grupo Arcoiris</h1>
+    
+    </div>
+    <form class="formularioModificar">
+       
+
+            <div class="form">
+
+                <div class="first-form-row">
+                    <div class="input-container">
+                      <label>Nombre del grupo</label>
+                      <input class="required" id="txt-groupName" type="text" />
+
+                    </div>
+                    <div class="input-container">
+                        <label>Tamaño</label>
+                        <input class="required" id="txt-tamannoGrupo" type="text"/>
+                    </div>
+                    <div class="input-container">
+                        <label>Agresividad</label>
+                        <select class="required" id="aggressiveness">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="input-container">
+                        <label>Tipo</label>
+                        <input class="required" id="txt-groupType" type="text" />
+                    </div>
+                <div class="input-container">
+                    <label>Descripción</label>
+                    <input class="required" id="txt-groupDescription" type="text" />
+                </div>
+                </div>
+           
+
+                <div class="row">
+                    <div class="btn-container">
+                        <button id="btn-continue">Continuar</button>
+                    
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+
+

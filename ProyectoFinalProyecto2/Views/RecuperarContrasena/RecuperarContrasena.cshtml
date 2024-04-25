@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña</title>
+    <link rel="stylesheet" href="~/css/RecuperarContrasena.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="~/Media/perro.png" alt="dog">
+        </div>
+        <div class="right-panel">
+            <div class="return-link">
+                <a href="@Url.Action("Login", "RecuperarContrasena")"> > Volver </a>
+            </div>
+            <img src="~/Media/Café.png" alt="Logo cafe">
+            <form action="#">
+                <div class="input-container">
+                    <label class="label" for="email">Ingrese su correo electrónico donde recibirá un enlace para restablecer su contraseña:</label>
+                </div>
+                <div class="input-container">
+                    <label class="label" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </form>
+            <button id="openPopup">Iniciar Sesión</button>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <div class="popup-top">
+                <img src="~/Media/PopUpMensaje.png" alt="Imagen">
+            </div>
+            <div class="popup-bottom">
+                <h2>Revisa tu correo</h2>
+                <p>Se han enviado instrucciones para cambiar la contraseña a <span id="emailPlaceholder">xxxx@gmail.com</span>. Sigue los pasos del correo.</p>
+                <button id="resendEmail">↺ Volver a enviar correo</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    <script src="~/js/RecuperarContrasena.js"></script>
+</body>
+</html>

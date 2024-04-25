@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "../Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Modificar Usuario";
+}
+@section Styles{
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/css/UserModify.css">
+
+}
+@section Scripts{
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/UserModify.js"></script>
+}
+
+<div class="container-content">
+    <h1>Modificar Usuario</h1>
+    <form class="formularioModificar">
+        <div class="form-row">
+            @*  <div class="input-container">
+                <label>Nombre</label>
+                <input id="name" type="text" />
+            </div>
+            <div class="input-container">
+                <label>Apellido</label>
+                <input id="lastname" type="text" />
+            </div> *@
+        </div>
+
+        <div class="form-row">
+            @* <div class="input-container">
+                <label>Tipo identificación</label>
+                <select id="typeId" name="Tipo identificacion">
+                    <option value="cedula">Cedula</option>
+                    <option value="dimex">DIMEX</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label>Nro identificacion</label>
+                <input id="numeroId" type="number" />
+            </div> *@
+           <div class="input-container">
+                <label for="idRol">Rol</label>
+                <select id="idRol" class="input">
+                    <option value="1">Admin</option>
+                    <option value="2">Empleado</option>
+                    <option value="3">Cliente</option>
+                </select>
+            </div>
+           
+        </div>
+
+        <div class="form-row">
+
+            <div class="input-container">
+                <label>Correo electronico</label>
+                <input id="email" type="email" class="input" />
+            </div>
+            <div class="input-container">
+                <label>Contraseña</label>
+                <input id="password" type="password" class="input" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="map">
+                <div id="message" class="message"><P>Direccion</P></div>
+
+                <div id="mapid"></div>
+            </div>
+        </div>
+        
+
+        <div class="form-row">
+            <button id="modifyBtn" class="btn primary" >Modificar</button>
+        </div>
+    </form>
+</div>

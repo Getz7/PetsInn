@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "../Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Lista de usuarios";
+}
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="~/css/UsersList.css">
+}
+
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/ClientsList.js"></script>
+}
+
+    <div class="container-content">
+        <h1>Usuarios</h1>
+        <div class="container2">
+        <table id="tablaUsuarios" class=" scroll">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Identificación</th>
+                <th>Tipo Identificación</th>
+                <th>Correo</th>
+                <th>Rol</th>
+                <th>Editar</th>
+            </tr>
+        </table>
+        </div>
+       
+    </div>

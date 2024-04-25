@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+    <link href="~/css/Layouts/master.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/CambiarContrasena.css">
+    <title>Cambio de Contraseña</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <img class="logo" src="~/Media/Café.png" alt="Logo">
+    <div class="container">
+        <img class="image" src="~/Media/PopUpCambiarContrasena.png" alt="Imagen">
+        <div class="content">
+            <h1>Cambiar contraseña</h1>
+            <form action="#">
+                <div class="input-container">
+                    <label for="confirmar">Nueva contraseña:</label>
+                    <input class="required input" type="password" id="password" name="contrasenna" required>
+                </div>
+                <div class="input-container">
+                    <label for="confirmar2">Confirmar Contaseña:</label>
+                    <input class="required input" type="password" id="confirm-password" name="contrasenna2" required>
+                </div>
+                <button type="submit" id="updateUser">Actualizar contraseña</button>
+            </form>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/CambiarContrasena.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h1 {
+    margin: 6%;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+.container-content {
+    padding: 0 10%;
+}
+/*Tabla formulario*/
+
+.formularioModificar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    padding: 2% 20%;
+    background-color: white;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px;
+    margin-top:4%;
+}
+
+.form-row{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+.input-container{
+    display:flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+button {
+    font-size:15px;
+    padding: 10px;
+    width:100%;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 2px; /* Añadimos un margen superior */
+
+}
+.map {
+    padding:2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#mapid {
+    width: 500px;
+    height: 250px;
+}

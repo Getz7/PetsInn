@@ -1,0 +1,95 @@
+﻿.title-container {
+    display: flex;
+    justify-content: center;
+    font-weigh: 100;
+        
+}
+
+
+.info-container {
+    background-color: aqua;
+    height: 300px;
+    margin: 70px 200px 10px 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.first-form-row {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formularioModificar {
+    display: flex;
+    align-content: center;
+    width: 70%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+#btn-continue {
+    font-size: 15px;
+    padding: 10px;
+    width: 50%;
+    height: 60%;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    /* Añadimos un margen superior */
+}
+
+.btn-container {
+    display: flex;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+input, select {
+    width: 150px;
+    height: 33px;
+    border-radius: 5px 5px 0px 0px;
+    border: none;
+    border-bottom: 1px solid #97533E;
+}

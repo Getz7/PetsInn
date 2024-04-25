@@ -1,0 +1,234 @@
+﻿.containerTitle h1 {
+    font-weight: 200;
+    margin: 50px 0 0 85px ;
+    font-size: 38px;
+}
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container2 h2 {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.container2 h3 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.container3 {
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 10px;
+    align-items: center;
+    width: 40%;
+}
+
+
+.container4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.container5 {
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 10px;
+    align-items: center;
+    width: 40%;
+}
+
+.container4 h3 {
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.container4 input {
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+   /* border: none;*/
+}
+
+.photo-container {
+    /* Estilos para el contenedor de la foto */
+    margin-top: -50px;
+    text-align: center;
+}
+
+#add-image-container {
+    display: inline-block;
+    position: relative;
+}
+
+#user-photo-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+#add-image-container {
+    background-color: white;
+    height: 200px;
+    border-radius: 1000px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+.add-image-container input[type=file] {
+    font-size: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#add-photo-label {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-dark-brown);
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .btn-container button {
+        font-size: 16px;
+        padding: 7px 20px;
+        margin: 0 10px;
+        border-radius: 20px;
+        background-color: #8B4513;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+.container-reserva-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 55px;
+}
+
+
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    color: var(--color-brown);
+    justify-content: center;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.cards-container {
+    border-radius: 20px;
+    background-color: white;
+    width: 270px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card-content p {
+        padding: 5px 0;
+    }
+
+.card-reservas {
+    background-color: #FFFFFF;
+}
+
+.mascotas-container {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    height: 160px;
+}
+
+    .card-img img {
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        height: 170px;
+        width: 250px;
+    }
+
+.card-mascotas-content {
+    height: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark-brown);
+    margin: 5px 0;
+}
+
+.card-pet-title {
+    font-size: 16px;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    display: flex;
+    width: 100%;
+    padding: 5px 10px;
+    justify-content: center;
+}
+
+    .card-pet-title h2 {
+        font-size: 30px;
+    }
+
+.card-pet-info {
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

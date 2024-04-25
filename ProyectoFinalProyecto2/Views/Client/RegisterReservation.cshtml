@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "../Shared/_LayoutClient.cshtml";
+    ViewBag.Title = "Pago de reserva";
+}
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="~/css/RegistroReserva.css">
+    <link href="~/css/Layouts/LayoutClient.css" type="text/css" rel="stylesheet" />
+}
+
+@* @section Scripts{
+    <script src="https://www.paypal.com/sdk/js?client-id=AahPBpw7V7_jnnCq8MFvNBBNoiYdL0ZOrkzzN7JU3YULXjUaTSHfv6AdoS--reBnXWDhmFXSLVz_dqhW"></script>
+} *@
+
+<main>
+
+    <div class="container-content">
+        <h1>Datos Reserva</h1>
+        <form class="formularioModificar">
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Fecha de Entrada</label>
+                    <input class="input required" type="date" id="date-E" name="dateE">
+                </div>
+                <div class="input-container">
+                    <label>Fecha de Salida</label>
+                    <input class="input required" type="date" id="date-S" name="dateS">
+                </div>
+                <div class="input-container">
+                    <label>Mascota</label>
+                    <select id="pet" name="pet">
+                     
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Aspectos especiales</label>
+                    <input type="text" class="specialAspects" id="special-Aspects" required>
+                </div>
+               
+            </div>
+            <div class="form-row2">
+               
+            </div>
+            <div class="form-row">
+                <p>Servicios extra</p>
+            </div>
+            <div id="services-container" class="form-services">
+            </div>
+            <div class="form-row">
+                <div class="btn-container">
+                    <button id="btn-continue">Continuar</button>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <div class="popup-top">
+                    <img src="~/Media/PopUpMensaje_1.png" alt="Imagen de la parte superior">
+                </div>
+                <div class="popup-bottom">
+                    <h2>Reserva registrada con éxito</h2>
+                    <div class="buttons">
+                        <button class="continue">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/RegistroReservaCliente.js" asp-append-version="true"></script>
+

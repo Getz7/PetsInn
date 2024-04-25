@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/Home.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/Layouts/master.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+
+    <title>Pets Inn</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="~/Media/BlancoLargo.png" alt="Logo PetsInn">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="@Url.Action("Login", "Home")" class="">Iniciar Sesión</a>
+            <p>|</p>
+            <a href="@Url.Action("RegistroUsuario", "Home")" class="">Registrarse</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-img">
+            <div class="text-container" >
+                <img src="~/Media/HomePage/Blanco.png" />
+                <h2>Un lugar seguro para las mascotas</h2>
+            </div>
+        </div>
+
+        <div class="services-container">
+            <div class="services-title">
+                <h1>Algunos servicios</h1>
+            </div>
+            <div class="icons-container">
+                <div class="service">
+                    <img class="center-img" src="~/Media/iconPaseo.png" alt="Logo PetsInn">
+                    <p class="margin">Paseo Diario</p>
+                </div>
+                <div class="service">
+                    <img class="center-img" src="~/Media/iconTransporte.png" alt="Logo PetsInn">
+                    <p class="margin">Transporte</p>
+                </div>
+                <div class="service">
+                    <img class="center-img" src="~/Media/iconAseo.png" alt="Logo PetsInn">
+                    <p class="margin">Aseo</p>
+                </div>
+                <div class="service">
+                    <img class="center-img" src="~/Media/iconVet.png" alt="Logo PetsInn">
+                    <p class="margin">Veterinaria</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr />
+        </div>
+
+        <div class="background-container">
+            <div class="img-container">
+                <div>
+                    <img src="~/Media/HomePage/PaseoDiario.png" alt="Paseo diario">
+                </div>
+                <div class="txt-block">
+                    <h1 class="text-brown txt-center font-40 margin">Paseo Diario</h1>
+                    <p class="text-brown txt-center font-30 ">Paseos diarios a su mascota, todos los días a toda hora. Nos enfocamos en las necesidades de tu mejor amigo para que los paseos sean interactivos y gasten toda esa energía extra que puedan tener. </p>
+                </div>
+            </div>
+
+            <div class="paws">
+                <img src="/Media/HomePage/paws.png" />
+            </div>
+
+            <div class="img-container">
+                <div class="txt-block">
+                    <h1 class="text-brown txt-center font-40 margin">Transporte</h1>
+                    <p class="text-brown txt-center font-30 ">Transportes desde su casa al hotel. Nos adaptamos a las necesidades de los dueños. Contamos con transporte especializado para moviliar a tu mascota a nuestro hotel y a su casa, con la mejor atención y cuidado.</p>
+                </div>
+                <div>
+                    <img src="~/Media/HomePage/Transporte.png" alt="Transporte">
+                </div>
+            </div>
+
+            <div class="paws reverse">
+                <img src="/Media/HomePage/paws.png" />
+            </div>
+
+            <div class="img-container">
+                <div>
+                    <img src="~/Media/HomePage/Aseo.png" alt="Grooming y Baño">
+                </div>
+                <div class="txt-block">
+                    <h1 class="text-brown txt-center font-40 margin">Grooming y Baño </h1>
+                    <p class="text-brown txt-center font-30 ">
+                        Pets Inn cuenta con un peluquero profesional que puede atender todas las necesidades de aseo específicos para su mascota.
+                        El aseo regular no solo mejora la apariencia física de su mascota; también le brinda cómodidad y tranquilidad, lo que mejora su estado de ánimo.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="paws">
+                <img src="/Media/HomePage/paws.png" />
+            </div>
+
+            <div class="img-container">
+                <div class="txt-block">
+                    <h1 class="text-brown txt-center font-40 margin">Emergencias Médicas</h1>
+                    <p class="text-brown txt-center font-30 ">Contamos con personal médico de calidad, listo para atender a tu mascota en caso de cualquier emergencia; ya sea en caso de algún accidente o que tu mascota tenga algún padecimiento que requiera de cuidados y/o ayuda inmediata. </p>
+                </div>
+                <div>
+                    <img src="~/Media/HomePage/Veterinaria.png" alt="Veterinaria">
+                </div>
+            </div>
+        </div>
+
+        <div class="more-title">
+            <h1>Y más...</h1>
+        </div>
+
+        <div class="line">
+            <hr />
+        </div>
+
+        <div class="bg-register">
+            <div class="text-container-register">
+                <h2>Únete a nuestra comunidad </h2>
+                <button class="btn secondary" href="@Url.Action("RegistroUsuario", "Home")">Registrarse</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="contenedor-footer">
+            <div class="img-footer">
+                <img class="imagen-footer" src="~/Media/HomePage/MugiwaraBlanco (1).png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <div class="text-footer">
+                    <h1>Redes Sociales</h1>
+                </div>
+                <div class="contenedor-redes">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            
+            <div class="contactenos-footer">
+                <div class="text-footer">
+                    <h1>Contáctenos</h1>
+                </div>
+                <div class="text-contact">
+                    <p><i class="fa-regular fa-envelope"></i>  info@mugiwara.com<p></p>
+                    <p><i class="fa-solid fa-phone"></i>  Teléfono:63235258<p></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="derechos-elementos">© 2023 Derechos reservados - Mugiwara S.A.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

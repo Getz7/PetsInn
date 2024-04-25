@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "../Shared/_LayoutAdmin.cshtml";
+
+}
+@section Styles {
+    <link href="/css/PetAsign.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/PetAsign.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+
+
+<div class="container-content">
+    <h1>Asignar Mascota</h1>
+    <form action="#" class="register-form">
+        <div class="register-container">
+
+
+            <div class="form-row">
+                <div class="input-container group-container">
+                    <label>Mascotas</label>
+                    <select class="input" id="pets" name="Grupo Mascota">
+                       
+                    </select>
+                </div>
+                
+                <div class="input-container">
+                    <label>Placas Disponibles</label>
+                    <select class="input" id="boards">
+                       
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="btn-container">
+                    <button class="btn primary" id="btnAsign">Asignar</button>
+                </div>
+            </div>
+        </div>
+      
+    </form>
+</div>
+

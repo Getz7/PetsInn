@@ -1,0 +1,117 @@
+﻿/*contenido*/
+
+h1 {
+    margin: 30px;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px !important;
+    text-align: center;
+}   
+
+.container-content {
+    width: 100%;
+}
+/*Tabla formulario*/
+.register-form {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    padding: 2% 20%;
+    /*background-color: white;*/
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+
+.radio-input {
+    width: auto;
+    height: auto;
+    accent-color: #8B4513;
+}   
+
+ .radio-input-container{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right:50px;
+    flex-direction:column;
+   
+ }
+ .btn-container{
+     display: flex;
+     width: 250px;
+     align-items:center;
+     justify-content:center;
+ }
+.register-container {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.group-container{
+    margin:0 100px 0 0;
+}
+
+#add-image-container {
+    background-color: #fff;
+    height: 200px;
+    border-radius:100px;
+    width:200px;
+    margin-left:10px
+}
+.photo-container {
+    /* Estilos para el contenedor de la foto */
+    margin-top: -50px;
+    text-align: center;
+}
+
+#user-photo-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+#add-photo-label {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-dark-brown);
+    border-radius: 5px;
+}
+
+#add-image-container {
+    background-color:#fff;
+    height: 250px;
+    border-radius: 1000px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sex-title {
+  display:flex;
+  align-self:flex-start;
+}
+
+.sex-inputs{
+    display:flex;
+    gap:10px;
+}
+

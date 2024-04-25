@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "../Shared/_LayoutEmployee.cshtml";
+    ViewBag.Title = "Configuracion de Grupos";
+}
+@section Styles {
+    <link href="/css/GroupConfiguration.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/GroupConfiguration.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+<main>
+    <div class="title-container">
+        <div class="title"><p>Mascotas</p></div>
+        <div class="table-container">
+            <table id="tablePets" class="">
+                <tr>
+                    <th>Identificación de Cliente</th>
+                    <th>Nombre Mascota</th>
+                    <th>Descripción</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Raza</th>
+                    <th>Nivel de Agresividad</th>
+             
+                </tr>
+                
+
+            </table>
+        </div>
+    </div>
+   
+    <div class="container-groups">
+        <div class="group-Block">
+            <p class="title2">Grupos</p>
+            <div class="table-container">
+                <table id="tableGroups" class="">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Tipo</th>
+                        <th>Editar</th>
+                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="asign-Block">
+            <p class="title2">Asignacion</p>
+            <div class="asignGroupBlock">
+                <label>Id Cliente</label>
+                <input id="id-Client" class="input" type="text" />
+                <label>Mascotas</label>
+                <select class="input" id="petSelect">
+                   
+
+                </select>
+               
+                
+
+                <label>Grupo</label>
+                <select class="input" id="grupoSelect">
+                   
+
+                </select>
+
+                <button href="#"id="asignBtn"class="btn primary">Asignar</button>
+            </div>
+        </div>
+    </div>
+</main>

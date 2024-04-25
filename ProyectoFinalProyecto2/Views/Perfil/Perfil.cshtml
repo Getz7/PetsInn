@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "../Shared/_LayoutClient.cshtml";
+    ViewBag.Title = "Mi perfil";
+}
+@section Styles {
+    <link href="/css/perfil.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts {
+    <script src="~/js/perfil.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+<div class="container1">
+    <div class="containerTitle">
+        <h1>Mi Perfil</h1>
+    </div>
+    <div class="container2">
+        <div class="container3">
+            <div>
+                <h2><span id="nombreUsuario"></span></h2>
+            </div>
+            <div class="photo-container">
+                <div id="add-image-container">
+                    <input type="file" id="user-photo-file" style="display: none;" accept="image/*" onchange="previewImage()">
+                    <img id="user-photo-preview" src="#" alt="Preview" style="display: none;">
+                </div>
+                <label for="user-photo-file" id="add-photo-label">Agregar foto</label>
+            </div>
+            <div class="container4">
+                <h3><span id="tipoIdentificacion"></span></h3>
+                <h3><span id="numeroIdentificacion"></span></h3>
+            </div>
+            <div class="container4">
+                <h3>Correo</h3>
+                <h3><span id="correo"></span></h3>
+            </div>
+            <div class="container4">
+                <h3>Dirección</h3>
+                <h3><span id="direccion"></span></h3>
+            </div>
+            <div class="container4">
+                <div class="btn-container">
+                    <button id="btn-continue">Cambiar Contraseña</button>
+                </div>
+            </div>     
+        </div>
+        <div class="container5">
+            <div>
+                <h2>Mis Mascotas</h2>
+            </div>
+            <div class ="container-reserva-mascotas" id="pets-container">
+           
+            </div>
+        </div>
+    </div>
+</div>
+

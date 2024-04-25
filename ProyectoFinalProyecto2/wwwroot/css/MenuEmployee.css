@@ -1,0 +1,198 @@
+﻿body {
+}
+.container-content {
+    width: 100%;
+    padding: 0 10%;
+}
+/*Tabla formulario*/
+
+.formularioModificar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    padding: 2% 20%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+.title {
+    color: var(--color-dark-brown);
+    font-size: 40px;
+}
+button, button {
+    margin: 0;
+    padding: 0 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+h1 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-packages {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    justify-content: space-evenly;
+}
+.container-packages2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0;
+
+}
+    .container-packages2 p {
+        color: var( --color-light-brown);
+        font-size: 32px;
+        padding-right: 10px;
+    }
+.package {
+    display: flex;
+    border-radius: 15px;
+    width: 250px;
+    background-color: white;
+    flex-direction: column;
+}
+.name {
+    color: var( --color-light-brown);
+    font-size: 32px;
+    padding: 0 0 10px 25px;
+    
+}
+.subname {
+    color: var( --color-light-brown);
+    font-size: 32px;
+    padding: 14px;
+    width: 70%;
+}
+.icon-pencil {
+    padding: 14px;
+    width: 35%;
+}
+.services {
+    color: black;
+    font-size: 16px;
+    display: flex;
+}
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services li {
+    padding-left: 20px; 
+    position: relative;
+}
+.fa-pen-to-square {
+    color: var(--color-light-brown);
+    font-size: 18px
+}
+.fa-trash {
+    color: var(--color-light-brown);
+    font-size: 18px;
+}
+.fa-circle-plus {
+    color: var(--color-light-brown);
+    font-size: 18px;
+}
+
+.services li::before {
+    content: '\2022';
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+}
+.form-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.input-container-services {
+    width: 25%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+}
+.checkbox-container {
+    display: flex;
+}
+
+
+
+
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    ;
+}
+
+    .custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #97533E;
+    border-radius: 50%;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #97533E;
+    border-radius: 50%;
+}

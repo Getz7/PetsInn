@@ -1,0 +1,110 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    top: 200px;
+}
+
+.logo {
+    position: absolute;
+    top: 30px; /* Ajusta la distancia hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px; /* Ajusta el tamaño del logo según tus necesidades */
+    display: block;
+    z-index: 2;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+    .content h1 {
+        font-size: 24px;
+        margin-bottom: 20px; /* Ajusta el espacio entre el texto y el borde inferior */
+    }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    padding: 10px;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 30px; /* Añadimos un margen superior */
+}
+
+    button:hover {
+        background-color: #5D3326;
+    }
+
+input[type="confirmar"],
+input[type="confirmar2"] {
+    border: none;
+    border-bottom: 1px solid #8B4513;
+    background: none;
+    padding: 0;
+    width: 80%; /* Ajusta el ancho según tus preferencias */
+    outline: none;
+    height: 30px;
+}
+
+
+    input[type="confirmar"]:focus,
+    input[type="confirmar2"]:focus {
+        background-color: #f5f5dc; /* Color blanco hueso */
+    }
+
+.input-error {
+    border: 2px solid red !important;
+}

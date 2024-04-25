@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "../Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Lista de servicios";
+}
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="~/css/ServicesList.css">
+}
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/ServiceList.js"></script>
+}
+    <div class="container-content">
+        <h1>Servicios</h1>
+
+        <div class="table-container">
+            <table id="tablaServicios">
+                <tr>
+                    <th>Id</th>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Precio en colones</th>
+                    <th>Editar</th>
+                </tr>
+                   
+            </table>
+        </div>
+    </div>

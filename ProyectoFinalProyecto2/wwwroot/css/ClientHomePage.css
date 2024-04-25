@@ -1,0 +1,217 @@
+﻿/*Iconos*/
+
+.fa-x {
+    cursor: pointer;
+}
+
+/*contenido*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: var(--color-light-brown);
+}
+
+/*Fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+h1 {
+    margin: 30px;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.container-reserva-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 50px;
+}
+
+.add-container {
+    display:flex;
+    flex-direction: column;
+    font-size: 70px;
+    color: var(--color-brown) !important;
+    justify-content: center;
+    margin: 10px 30px;
+    cursor: pointer;
+    
+}
+
+.add-container a {
+    color: var(--color-brown) !important;
+}
+
+.cards-container {
+    border-radius: 20px;
+    background-color: white;
+    width: 270px;
+    height: 200px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    margin: 10px 10px;
+}
+
+.card-titulo {
+    background-color: var(--color-light-brown);
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    color: var(--bg-color);
+    font-size: 32px;
+    justify-content: space-between;
+    padding: 0 15px
+}
+
+.card-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 70%;
+}
+
+.card-content p{
+    padding: 5px 0;
+}
+
+.card-reservas{
+    background-color: #FFFFFF;
+}
+
+.mascotas-container {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 375px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.card-img img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 300px
+}
+
+.card-mascotas-content {
+    height: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark-brown);
+}
+
+.card-pet-title {
+    text-align: center;
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    height: 30%;
+}
+
+.card-pet-info {
+    font-size: 20px;
+    font-weight: 100;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

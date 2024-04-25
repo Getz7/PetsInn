@@ -1,0 +1,98 @@
+﻿@{
+    Layout = "../Shared/_LayoutEmployee.cshtml";
+}
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="~/css/RegistroReserva.css">
+    <link href="~/css/Layouts/LayoutClient.css" type="text/css" rel="stylesheet" />
+}
+
+@section Scripts{
+
+
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+
+
+
+<main>
+
+    <div class="container-content">
+        <h1>Datos Reserva</h1>
+        <form class="formularioModificar">
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Identificación Cliente</label>
+                    <input class="input required" type="text" id="id-Client" name="idClient">
+                </div>
+                <div class="input-container">
+                    <label>Nombre</label>
+                    <input disabled type="text" id="names" name="name" />
+                </div>
+                <div class="input-container">
+                    <label>Apellido</label>
+                    <input disabled type="text" id="last-name" name="lastName" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Mascota</label>
+                    <select id="pet" name="pet">
+                        <option value="">Ingrese el número de identificación</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label>Fecha de Entrada</label>
+                    <input class="input required" type="date" id="date-E" name="dateE">
+                </div>
+                <div class="input-container">
+                    <label>Fecha de Salida</label>
+                    <input class="input required" type="date" id="date-S" name="dateS">
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-container">
+                    <label>Aspectos especiales</label>
+                    <input type="text" class="specialAspects" id="special-Aspects" required>
+                </div>
+                <div class="input-container package2">
+                    <label>Paquete</label>
+                    <select class="input required" id="packages" name="package">
+                        <option value="">Seleccione un paquete</option>
+                        <option value="3">Básico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="1">Premium</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <p>Servicios extra</p>
+            </div>
+            <div id="services-container" class="form-services">
+            </div>
+            <div class="form-row">
+                <div class="btn-container">
+                    <button id="btn-continue">Continuar</button>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <div class="popup-top">
+                    <img src="~/Media/PopUpMensaje_1.png" alt="Imagen de la parte superior">
+                </div>
+                <div class="popup-bottom">
+                    <h2>Reserva registrada con éxito</h2>
+                    <div class="buttons">
+                        <button class="continue">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/RegistroReservaEmployee.js" asp-append-version="true"></script>

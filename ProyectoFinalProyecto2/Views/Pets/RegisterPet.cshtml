@@ -1,0 +1,122 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Registro mascota";
+}
+@section Styles{
+    <link href="~/css/RegisterPet.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+}
+@section Scripts{
+    <script src="~/js/RegisterPet.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+}
+
+<div class="container-content">
+    <h1>Datos Mascota</h1>
+    <form action="#" class="register-form">
+        <div class="register-container">
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Identificación Usuario</label>
+                    <input class="input required" id="txt-userIdentification" type="text" class="input" />
+                </div>
+                <div class="input-container">
+                    <label>Nombre</label>
+                    <input disabled class="input required" id="names" type="text" class="input" />
+                </div>
+                <div class="input-container">
+                    <label>Apellido </label>
+                    <input disabled class="input required" id="last-name" type="text" class="input" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-container">
+                    <label>Nombre Mascota</label>
+                    <input class="input required" id="txt-petName" type="text"   />
+                </div>
+
+                        
+                <div class="input-container">
+                    <label>Tipo Mascota</label>
+                    <input class="input required" id="txt-petType" type="text"  />
+                </div>
+
+                <div class="input-container">
+                    <label>Descripción</label>
+                    <input id="txt-description" type="text" class="input" />
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-container">
+                    <label>Fecha de Nacimiento</label>
+                    <input class="input required" type="date" id="birthday" name="birthday"  />
+                </div>
+                <div class="input-container">
+                    <label>Raza</label>
+                    <input class="input required" id="txt-breed" type="text"  />
+                </div>
+                <div class="input-container">
+                    <label>Nivel Agresividad</label>
+                    <select class="input required" id="aggressiveness"  >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-row">
+
+                <div class="input-container group-container">
+                    <label>Grupo</label>
+                    <select id="typeId" name="Grupo Mascota" class="input" >
+                        <option value="">Sin grupo</option>
+                       
+                    </select>
+                </div>
+                <div class="radio-input-container">
+
+
+                    <div class="sex-title">
+
+                        <label>Sexo</label>
+                    </div>
+                    <div class="sex-inputs">
+                        
+                        <label>Hembra</label>
+                        <input checked name="sex" class="radio-input" type="radio" value="F" />
+                       
+                        
+                        <label>Macho</label>
+                        <input name="sex" class="radio-input" type="radio" value="M" />
+
+                        
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="btn-continue" class="btn primary" >Continuar</button>
+                </div>
+            </div>
+        </div>
+        <div class="photo-container">
+            <div id="add-image-container">
+                <input type="file" id="user-photo-file" style="display: none;" accept="image/*" onchange="previewImage()">
+                <img id="user-photo-preview" src="#" alt="Preview" style="display: none;">
+            </div>
+            <label for="user-photo-file" id="add-photo-label">Agregar foto</label>
+        </div>
+
+                
+    </form>
+</div>

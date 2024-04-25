@@ -1,0 +1,99 @@
+﻿.title {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    color: var(--color-dark-brown);
+    padding: 10px 0px;
+}
+.title2 {
+    display: flex;
+    font-size: 36px;
+    text-align: center;
+    padding: 2%;
+    color: var(--color-dark-brown);
+}
+table {
+    margin-top: 2%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+header {
+    z-index: 1;
+}
+
+.menu-lateral {
+    height: auto;
+}
+
+.contenedor {
+    height: auto;
+}
+
+th, td {
+    border: solid var(--bg-color) 2px;
+    padding: 7px;
+    font-weight:400;
+}
+table form button, button {
+    margin: 0;
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.group-Block {
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.asign-Block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.asignGroupBlock {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 22px;
+}
+.fa-pen-to-square {
+    color: var(--color-brown);
+    font-size: 20px
+}

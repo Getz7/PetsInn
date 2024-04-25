@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-storage.js"></script>
+
+    <link href="~/css/Layouts/master.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/Layouts/LayoutClient.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/RegistroUsuario.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="../Media/BlancoLargo.png" alt="Logo PetsInn">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a id="continuar">Iniciar sesión</a>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+
+
+        <main class="main-content">
+            <div class="container-content">
+                <h1>Datos Personales</h1>
+                <div class="info-and-photo-container">
+                    <div class ="form-container">
+                        <form action="#" class="register-form">
+                            <div class="register-container">
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Nombre</label>
+                                        <input class="input required" id="txt-name" type="text" name="name" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Apellidos</label>
+                                        <input id="txt-lastName" class="input required" type="text" name="lastName" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <label>Tipo identificación</label>
+                                        <select class="input required" id="id-type" name="idType">
+                                            <option value=""></option>
+                                            <option id="cedula" value="Cédula">Cédula</option>
+                                            <option id="dimex" value="DIMEX">DIMEX</option>
+                                            <option id="pasaporte" value="Pasaporte">Pasaporte</option> 
+                                        </select>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Número de Identificación</label>
+                                        <input class="input required" id="id-number" type="text" name="idNumber" />
+                                    </div>
+
+                                    <div class="input-container">
+                                        <label>Correo electrónico</label>
+                                        <input class="input required" id="email" type="email" name="email" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+
+                                    <div class="input-container">
+                                        <label>Contraseña</label>
+                                        <input class="input required" type="password" id="password" name="password" />
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Confirmar contraseña</label>
+                                        <input class="input required" id="confirm-password" type="password" name="confirmPassword" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="photo-container">
+                        <div id="add-image-container">
+                            <input type="file" id="user-photo-file" style="display: none;" accept="image/*" onchange="previewImage()">
+                            <img id="user-photo-preview" src="#" alt="Preview" style="display: none;">
+                        </div>
+                        <label for="user-photo-file" id="add-photo-label">Agregar foto</label>
+                    </div>
+
+                </div>
+
+                <div class="map" >
+                <div id="message" class="message"><P>Agrega tu dirección</P></div>
+                
+                <div id="mapid"></div>
+                </div>
+                <div class="button">
+                    <div class="btn-container">
+                        <button id="btn-continue">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/RegistroUsuario.js" asp-append-version="true"></script>
+</body>
+</html>

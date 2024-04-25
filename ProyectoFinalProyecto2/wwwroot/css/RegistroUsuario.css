@@ -1,0 +1,314 @@
+﻿.navbar a{
+    cursor: pointer;
+}
+.login-button {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: black; /* Cambiado a negro para el color del texto */
+    text-decoration: none; /* Eliminado el subrayado */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --bg-color: #F1F0EE;
+    --color-green: #A5B463;
+    --color-dark-brown: #6F5A55;
+    --color-brown: #97533E;
+    --color-light-brown: #E0A269;
+}
+
+body {
+    background-color: #FFFFFF;
+
+}
+
+
+.main-container {
+    display: flex;
+}
+
+h1 {
+    margin: 4%;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.info-and-photo-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    
+}
+
+.form-container {
+    width: 50%; /* Ancho del contenedor de información */
+    /* Estilos para el formulario */
+
+}
+
+.photo-container {
+    /* Estilos para el contenedor de la foto */
+    margin-top: -50px;
+    text-align: center;
+}
+
+
+
+#add-image-container {
+    display: inline-block;
+    position: relative;
+}
+/*Tabla formulario*/
+.register-form {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding: 2% 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 4%;
+    background-color: transparent;
+}
+
+.register-container{
+    background-color: transparent;
+}
+
+
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    background-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+
+}
+
+#btn-continue {
+    font-size: 15px;
+    padding: 10px;
+    width: 10%;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px
+    /* Añadimos un margen superior */
+}
+
+.radio-input {
+    width: auto;
+    height: auto;
+    accent-color: #8B4513;
+    background-color: whitesmoke;
+}
+
+.radio-input-container {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+}
+
+.btn-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    background-color: transparent;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.group-container {
+    margin: 0 100px 0 0;
+}
+
+#add-image-container {
+    background-color: var(--bg-color);
+    height: 250px;
+    border-radius: 1000px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add-image-container input[type=file] {
+    font-size: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.input-error {
+    border: 2px solid red !important;
+}
+#add-photo-label {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-dark-brown);
+    border-radius: 5px;
+}
+
+
+/*.btn-container{
+    align-items: center;
+}*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+
+
+#mapid{
+    width:1000px;
+    height: 400px;
+    
+}
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.popup-top {
+    background-color: #A5B463;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.popup-top img {
+    max-width: 100%;
+}
+
+.popup-bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-bottom h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-bottom p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;  /*Añade esquinas redondeadas*/
+}
+
+/*.buttons .cancel {
+    color: #795548;*/  /*Color del texto para el botón Cancelar*/
+    /*background-color: transparent;*/  /*Fondo transparente */
+    /*border: 2px solid #795548;*/  /*Borde del botón */
+/*}*/
+
+.buttons .continue {
+    color: #fff;  /*Color del texto para el botón Aceptar*/ 
+    background-color: #795548;  /*Color de fondo para el botón Aceptar*/ 
+    border: none;  /*Sin borde*/ 
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    z-index: 999; /* Asegura que esté por encima del resto de los elementos */
+}
+
+#message{
+    width: 1000px;
+
+}
+.buttons .accept {
+    color: #fff; /* Color del texto para el botón Aceptar */
+    background-color: #795548; /* Color de fondo para el botón Aceptar */
+    border: none; /* Sin borde */
+}
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+
+#user-photo-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    object-fit: cover;
+}

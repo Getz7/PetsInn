@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "../Shared/_LayoutClient.cshtml";
+
+}
+@section Styles {
+    <link href="/css/PetClientRegister.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/PetClientRegister.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+        <div class="container-content">
+            <h1>Datos Mascota</h1>
+            <form action="#" class="register-form">
+                <div class="register-container">
+
+                    <div class="form-row">
+                        <div class="input-container">
+                            <label>Nombre Mascota</label>
+                            <input class="input required" id="txt-petName" type="text" />
+                        </div>
+
+
+                        <div class="input-container">
+                            <label>Tipo Mascota</label>
+                            <input class="input required" id="txt-petType" type="text" />
+                        </div>
+
+                        <div class="input-container">
+                            <label>Descripción</label>
+                            <input class="input" id="txt-description" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="input-container">
+                            <label>Fecha de Nacimiento</label>
+                            <input class="input required" type="date" id="birthday" name="birthday" />
+                        </div>
+                        <div class="input-container">
+                            <label>Raza</label>
+                            <input class="input required" id="txt-breed" type="text" />
+                        </div>
+                        <div class="input-container">
+                            <label>Nivel Agresividad</label>
+                            <select class="input required" id="aggressiveness">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                       
+                <div class="radio-input-container">
+
+
+                    <div class="sex-title">
+
+                        <label>Sexo</label>
+                    </div>
+                    <div class="sex-inputs">
+
+                        <label>Hembra</label>
+                        <input checked name="sex" class="radio-input" type="radio" value="F" />
+
+
+                        <label>Macho</label>
+                        <input name="sex" class="radio-input" type="radio" value="M" />
+
+
+                    </div>
+                </div>
+                        <div class="btn-container">
+                        <button class="btn primary" id="btn-continue">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div id="add-image-container">
+                        <input type="file" id="user-photo-file" style="display: none;" accept="image/*" onchange="previewImage()">
+
+                        <img id="user-photo-preview" src="#" alt="Preview" style="display: none;">
+                    </div>
+                    <label for="user-photo-file" id="add-photo-label" class="">Agregar foto</label>
+                </div>
+
+            </form>
+        </div>
+    

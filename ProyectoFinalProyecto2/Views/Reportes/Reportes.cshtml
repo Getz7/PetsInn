@@ -1,0 +1,153 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Reportes";
+}
+@section Styles{
+    <link href="~/css/Reportes.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+}
+@section Scripts{
+    
+    <script src="~/js/TablaReportes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Media/es-Es.json"></script>
+}
+
+        <div class="block-tables">
+            <div class="title"><p>Reportes</p></div>
+            <div class="container-2">
+                <div class="table">
+                    <table class="table-earnings">
+                        <thead>
+                            <tr>
+                                <th>Mes</th>
+                                <th>Ingreso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Enero</td>
+                                <td>₡5.000.670</td>
+                            </tr>
+                            <tr>
+                            <td>Febrero</td>
+                            <td>₡4.759.000</td>
+                            </tr>
+                            <tr>
+                                <td>Marzo</td>
+                                <td>₡2.989.000</td>
+                            </tr>
+                            <tr>
+                                <td>Abril</td>
+                                <td>₡1.2.690</td>
+                            </tr>
+                            <tr>
+                                <td>Mayo</td>
+                                <td>₡6.890.034</td>
+                            </tr>
+                            <tr>
+                                <td>Junio</td>
+                                <td>₡7.629.670</td>
+                            </tr>
+                            <tr>
+                                <td>Julio</td>
+                                <td>₡1.890.700</td>
+                            </tr>
+                            <tr>
+                                <td>Agosto</td>
+                                <td>₡3.679.849</td>
+                            </tr>
+                            <tr>
+                                <td>Setiembre</td>
+                                <td>₡500.789</td>
+                            </tr>
+                            <tr>
+                                <td>Octubre</td>
+                                <td>₡1.500.000</td>
+                            </tr>
+                            <tr>
+                                <td>Noviembre</td>
+                                <td>₡1.078.902</td>
+                            </tr>
+                            <tr>
+                                <td>Diciembre</td>
+                                <td>₡11.678.979</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="earnings">
+                    <div class="earnings-int">
+                       <p>Ganancias Totales</p>
+                       
+                    </div>
+                    <div class="earnings-int2">
+                    <p>₡48.009.203</p>
+                    </div>
+                </div>
+            </div>
+            <div class="table-Med">
+                <table id="tablaMed" class="display">
+                    <thead>
+                        <tr>
+                            <th>Humedad</th>
+                            <th>Temperatura</th>
+                            <th>Fecha de Medicion</th>
+                            <th>idPlaca</th>
+                            <th>idMascota</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-color">
+                <div class="filter-container">
+                    <div class="dateBlocks">
+                        <div class="input-content">
+                            <label>Fecha Inicio</label>
+                            <input id="fechaInicio" class="input" type="datetime-local" />
+                            <label>Id del Cliente</label>
+                            <input id="id-Client" class="input" type="text" />
+                            <label>Mascotas</label>
+                            <select class="input" id="pets">
+                            </select>
+                        </div>
+                        <div class="input-content">
+                            <label>Fecha Salida</label>
+                            <input id="fechaSalida" class="input" type="datetime-local" />
+                            <label>Nombre</label>
+                            <input disabled id="nombre" class="input" type="text" />
+                            <label>Apellido</label>
+                            <input  disabled id="apellido" class="input" type="text" />
+                            
+                          
+                        </div>
+
+                    </div>
+                    <div class="dateBlocks">
+                        <div class="btn-container">
+                        <button class="btn primary" id="btn-filtrar">Filtrar </button>
+                        </div>
+                        <div class="btn-container">
+                        <button class="btn primary" id="btn-all">Mostrar Todas</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="chart-container">
+
+                    <canvas class="chart" id="myChart"></canvas>
+                    <canvas class="chart" id="myChart2"></canvas>
+                </div>
+            </div>
+           
+
+        </div>

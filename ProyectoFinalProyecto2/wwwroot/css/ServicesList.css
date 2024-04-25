@@ -1,0 +1,143 @@
+﻿h1 {
+    margin: 30px;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+.search-container {
+    align-self: end;
+    margin: 15px 0;
+}
+
+.container-content {
+    width: 100%;
+    padding: 0 5%;
+}
+
+input {
+    border: none;
+    margin: 0 10px;
+    width: 15%;
+    border-radius: 5px;
+    border-bottom: 1px var(--color-brown);
+}
+
+table {
+    margin-top: 2%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    border: solid var(--bg-color) 2px;
+    padding: 10px;
+}
+
+th {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#StateAndEditCell {
+    width:8%;
+    padding: 1%;
+}
+
+table form button, button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*Input search*/
+#SearchInput {
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+}
+
+    #SearchInput ::placeholder {
+        padding: 0 5px;
+    }
+
+
+
+/*Toggle switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 45%;
+        left: 5%;
+        bottom: 15%;
+        background-color: #FFFFFF;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+.table-container {
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+
+input:checked + .slider {
+    background-color: var(--color-green);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-light-brown);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 35px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+/*Iconos*/
+
+.fa-pen-to-square {
+    color: var(--color-brown);
+    font-size: 20px
+}

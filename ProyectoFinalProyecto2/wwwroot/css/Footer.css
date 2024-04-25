@@ -1,0 +1,95 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+footer {
+    text-align: center;
+}
+
+.contenedor-footer {
+    display: flex;
+    background-color: #A5B463;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.derechos {
+    background-color: #778244;
+    text-align: center;
+}
+
+.imagen-footer {
+    width: 50%;
+}
+
+.font-color {
+    color: #F1F0EE;
+}
+
+.derechos-elementos {
+    margin: 0px;
+    padding: 1%
+}
+
+.img-footer {
+    width: 33.33%
+}
+
+.redes-footer {
+    width: 33.33%
+}
+
+.contactenos-footer {
+    width: 33.33%
+}
+
+.contenedor-redes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+body {
+    margin: 0px
+}
+
+p {
+    font-size: 25px;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 18px;
+    width: 16%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 8px;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}

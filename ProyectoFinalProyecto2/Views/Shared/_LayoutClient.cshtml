@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/Layouts/master.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/Layouts/LayoutClient.css" type="text/css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
+
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="~/Media/BlancoLargo.png" alt="Logo PetsInn">
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="@Url.Action("ClientHomePage","Client")">Inicio</a>
+             <a href="@Url.Action("HistorialReservas","HistorialReservas")">Historial Reservas</a> 
+            <a href="@Url.Action("RegistrarMascota","Client")">Registrar Mascota</a>
+            <a href="@Url.Action("RegisterReservation","Client")">Reservar</a>
+            <a href="@Url.Action("Perfil","Perfil")"><i class="fa-solid fa-user"></i></a>
+            <a id="logout" href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+        
+
+        <main class="main-content">
+            @RenderBody()
+
+        </main>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

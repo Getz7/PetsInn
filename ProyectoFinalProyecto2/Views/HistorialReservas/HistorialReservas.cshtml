@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "../Shared/_LayoutClient.cshtml";
+
+}
+@section Styles {
+    <link href="/css/HistorialReservas.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/HistorialReservas.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+<main>
+    <div class="header-reservas">
+        <h1>Reservas</h1>
+    </div>
+    <h1>Proximas</h1>
+    <div class="container-reserva-mascotas" id="pets-container">
+        
+    </div>
+     <h1>Pasadas</h1>
+    <div class="container2">
+        <table class="scroll" id="tableReservationsHistory">
+            <tr>
+                <th>Nombre Macota</th>
+                <th>Fecha Entrada</th>
+                <th>Fecha Salida</th>
+                <th>Aspectos Especiales</th>
+               
+                <th>Paquete</th>
+                
+            </tr>
+        </table>
+    </div>
+
+</main>

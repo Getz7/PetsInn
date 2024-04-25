@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "../Shared/_LayoutEmployee.cshtml";
+    ViewBag.Title = "Registro de Cupones";
+}
+@section Styles {
+    <link href="/css/CreateCoupon.css" type="text/css" rel="stylesheet" />
+}
+@section Scripts{
+    <script src="~/js/CreateCoupon.js"></script>
+    <script src="https://kit.fontawesome.com/79ebbbb4e2.js" crossorigin="anonymous"></script>
+}
+<main>
+    <div class="container-content">
+        <h1>Registro Cupón</h1>
+        <form class="formularioModificar">
+           
+
+            <div class="form-row">
+               
+                <div class="input-container">
+                    <label>Codigo Cupón</label>
+                    <input class="input required" id="codigoCupon"  />
+                </div>
+                <div class="input-container">
+                    <label>Monto del Cupón</label>
+                    <input class="input required" id="monto" />
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-container">
+                    <label>Fecha Inicio</label>
+                    <input class="input required" id="fechaInicial" type="datetime-local" />
+                </div>
+                <div class="input-container">
+                    <label>Fecha Vencimiento</label>
+                    <input class="input required" id="fechaFinal" type="datetime-local" />
+                </div>
+            </div>
+            <div class="form-row">
+                <button class="btn primary" id="createBtn">Crear</button>
+            </div>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,119 @@
+﻿
+/*contenido*/
+h1 {
+    margin: 6%;
+    color: var(--color-dark-brown);
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Tabla formulario*/
+.register-form {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+#btn-continue {
+    font-size: 15px;
+    padding: 10px;
+    width: 50%;
+    height: 60%;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    /* Añadimos un margen superior */
+}
+
+.btn-container {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    width:1000px;
+}
+
+.group-container {
+    margin: 0 100px 0 0;
+}
+
+#add-image-container {
+    background-color: #fff;
+    height: 200px;
+    border-radius: 100px;
+    width: 200px;
+    margin-left: 10px
+}
+
+
+.radio-input {
+    width: auto;
+    height: auto;
+    accent-color: #8B4513;
+}
+
+.radio-input-container {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+}
+
+.sex-title {
+    display: flex;
+    align-self: flex-start;
+}
+
+.sex-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.photo-container {
+    /* Estilos para el contenedor de la foto */
+    margin-top: -50px;
+    text-align: center;
+}
+
+#user-photo-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+#add-photo-label {
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-dark-brown);
+    border-radius: 5px;
+}

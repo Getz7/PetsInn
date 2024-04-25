@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Reservas";
+}
+@section Styles{
+    <link href="~/css/Reservaciones.css" type="text/css" rel="stylesheet" />
+
+}
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/Reservaciones.js"></script>
+}
+
+<main>
+
+        <div class="content">
+            <h1 class="title">Reservas</h1>
+
+            <div class="dates">
+                 <div class="date">
+                    <label>Fecha Entrada</label>
+                    <input id="fechaEntrada" class="input" type="date"/>
+                </div>
+                <div class="date">
+                    <label>Fecha Salida</label>
+                    <input id="fechaSalida" class="input" type="date" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn primary" id="btn-filtrar">Filtrar</button>
+                </div>
+            </div>
+            <div class="container2">
+                    <table class="scroll" id ="tableReservations">
+                            <tr>
+                                <th>Estado</th>
+                                <th>Mascota</th>
+                                <th>Identificación</th>
+                                <th>Fecha Entrada</th>
+                                <th>Fecha Salida</th>
+                                <th>Aspectos Especiales</th>
+                              
+                            </tr>
+                    </table>
+            </div>
+        </div>
+
+</main>

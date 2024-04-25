@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "../Shared/_LayoutClient.cshtml";
+    ViewBag.Title = "Pago de reserva";
+}
+@section Styles {
+    <link href="/css/Client/PaymentBill.css" type="text/css" rel="stylesheet" />
+}
+
+@section Scripts{
+    <@* script src="https://www.paypal.com/sdk/js?client-id=AahPBpw7V7_jnnCq8MFvNBBNoiYdL0ZOrkzzN7JU3YULXjUaTSHfv6AdoS--reBnXWDhmFXSLVz_dqhW"></script> *@
+    <script src="~/js/PaymentBill.js"></script>
+}
+
+<div>
+    <div class="title">
+        <h1 id="pet-name"></h1>
+        <p>A continuación verá su factura y monto total</p>
+    </div>
+
+    <div class="content-container">
+        <div class="bill-container">
+            <div class="bill rounded">
+                <h2 class="bill-title">Resumen</h2>
+                <div class="bill-box" id="FechaEntrada">
+                    <h4>Fecha entrada</h4>
+                    <p id="txt-start-date">oct-27-2023</p>
+                </div>
+                <div class="bill-box" id="FechaSalida">
+                    <h4>Fecha salida</h4>
+                    <p id="txt-exit-date">nov-01-2023</p>
+                </div>
+
+                <div class="bill-line">
+                    <hr />
+                </div>
+
+                <div class="bill-box" id="Paquete">
+                    <h4 id="txt-package-name">Paquete Basico</h4>
+                    <p id="txt-package-price">₡</p>
+                </div>
+                <div class="bill-box services-list">
+                    <ul id="lst-services">
+                    </ul>
+                </div>
+
+                <div class="bill-line">
+                    <hr />
+                </div>
+
+                <div class="bill-box">
+                    <h4>Servicio extra</h4>
+
+                </div>
+                <div class="bill-box" id="ServiciosExtra">
+                        <div id="lst-extra-services"></div>
+                        <div id="extra-service-price">
+
+                        </div>
+                </div>
+
+                <div class="bill-line">
+                    <hr />
+                </div>
+
+                <div class="bill-box" id="Impuesto">
+                    <h4>I.V.A.</h4>
+                    <p id="impuestoIVA">₡</p>
+                </div>
+
+                <div class="bill-line">
+                    <hr />
+                </div>
+
+                <div class="bill-box discount" id="discount">
+                    <h4 id="coupon-name">Descuento</h4>
+                    <p id="coupon-discount">₡</p>
+                </div>
+
+                <div class="bill-box discount" id="credit-note-container">
+                    <h4>Nota de crédito</h4>
+                    <p id="credit-note-price">₡</p>
+                </div>
+
+                <div class="bill-line discount" id="discount-line">
+                    <hr />
+                </div>
+
+                <div class="bill-box bill-total">
+                    <h2>Total</h2>
+                    <h2 id="total">₡</h2>
+                </div>
+
+                <div class="bill-btn">
+                    <button class="btn primary" id="btn-pagar" >Pagar</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="coupons-container">
+            <div class="coupon-container rounded">
+                <label>Nota De Crédito</label>
+                <p id="nota-credito"></p>
+                @* <select id="notacredito" name="Nota de credito" class="input">
+                </select> *@
+                <button id="btn-use-credit-note" class="btn secondary">Aplicar</button>
+            </div>
+            <div class="coupon-container rounded">
+                <label>Cupón</label>
+                <input class="input" id="cupones" />
+                <button id="btn-use-coupon" class="btn secondary">Usar cúpon</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

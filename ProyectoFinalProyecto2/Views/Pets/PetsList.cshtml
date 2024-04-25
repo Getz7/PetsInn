@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "../Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Lista de mascotas";
+}
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="~/css/UsersList.css">
+}
+
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/PetsList.js"></script>
+}
+
+<div class="container-content">
+    <h1>Mascotas</h1>
+    <div class="container-mascotas">
+        <table id="tablaMascotas" class=" scroll">
+            <tr>
+                <th>Identificación Cliente</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Fecha Nacimiento</th>
+                <th>Raza</th>
+                <th>Agresividad</th>
+            </tr>
+        </table>
+    </div>
+   
+</div>
