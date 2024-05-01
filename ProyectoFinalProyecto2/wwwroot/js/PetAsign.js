@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 
 
-    fetch('http://192.168.43.138:8080/api/Board/GetBoardsAvailable')
+    fetch('http://192.168.56.1:8080/api/Board/GetBoardsAvailable')
         .then(response => response.json())
         .then(data => {
             console.log('Data retrieved from API:', data);
@@ -95,7 +95,7 @@ $("#btnAsign").click(function (e) {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        url: `http://192.168.43.138:8080/api/Board/AsignPetBoard?idMascota=${idMascota}&idPlaca=${idPlaca}`,
+        url: `http://192.168.56.1:8080/api/Board/AsignPetBoard?idMascota=${idMascota}&idPlaca=${idPlaca}`,
         method: 'POST',
         contentType: 'application/json;charset=utf-8',
         dataType: 'json',
