@@ -58,42 +58,14 @@ namespace API.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> Update(User user)
+        public string UpdateUser(User user, int id)
         {
-            var um = new UserManager();
 
-            try
-            {
-                // Obtener el usuario existente
-                var existingUser = await um.GetUserById(user.Id);
+            UserManager userManager = new UserManager();
+            userManager.UpdateUser(user, id);
 
-                // Actualizar solo las propiedades que se proporcionan en la solicitud
-                existingUser.Name = user.Name;
-                existingUser.LastName = user.LastName;
-                existingUser.Age = user.Age;
-                existingUser.Email = user.Email;
+            return "Modificado con exito";
 
-                // Actualizar la contraseña solo si se proporciona en la solicitud
-                if (!string.IsNullOrEmpty(user.Password))
-                {
-                    existingUser.Password = user.Password;
-                }
-
-                // Actualizar el rol solo si se proporciona en la solicitud
-                if (!string.IsNullOrEmpty(user.Role))
-                {
-                    existingUser.Role = user.Role;
-                }
-
-                // Guardar los cambios
-                await um.Update(existingUser);
-
-                return Ok(existingUser);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
         }
 
         [HttpGet]

@@ -6,7 +6,7 @@ namespace DataAccess.Dao
     public class SqlDao
     {
         private static SqlDao instance = new SqlDao();
-        private readonly string _connString = "Server=.\\MSSQLSERVER2023;Database=PetsInnDataBase;Trusted_Connection=True;";
+        private readonly string _connString = "Server=.;Database=BDP2;Trusted_Connection=True;";
 
         //Reviso si existe conexion a DB. Si la hay la uso, si no la creo. 
         public static SqlDao GetInstance()
