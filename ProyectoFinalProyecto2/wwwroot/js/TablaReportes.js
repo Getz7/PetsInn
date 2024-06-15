@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     //cambia por red
-    fetch('http://192.168.56.1:8080/api/Board/GetData')
+    fetch('http://192.168.0.7:8080/api/Board/GetData')
         .then(response => response.json())
         .then(data => {
             console.log('Data retrieved from API:', data);
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 
 
-    fetch('http://192.168.56.1:8080/api/Board/GetData')
+    fetch('http://192.168.0.7:8080/api/Board/GetData')
         .then(response => response.json())
         .then(data => {
             console.log('Data retrieved from API:', data);
@@ -130,7 +130,7 @@ $(document).ready(function () {
             console.error('Error fetching data:', error);
         });
 
-    fetch('http://192.168.56.1:8080/api/Board/GetData')
+    fetch('http://192.168.0.7:8080/api/Board/GetData')
         .then(response => response.json())
         .then(data => {
             console.log('Data retrieved from API:', data);
@@ -187,7 +187,7 @@ $(document).ready(function () {
 });
 $("#btn-all").click(function (e) {
     e.preventDefault();
-    fetch('http://192.168.56.1:8080/api/Board/GetData')
+    fetch('http://192.168.0.7:8080/api/Board/GetData')
         .then(response => response.json())
         .then(data => {
             console.log('Data retrieved from API:', data);
@@ -373,7 +373,7 @@ $("#btn-filtrar").click(function (e) {
     console.log(initialDate);
     console.log(finalDate);
     console.log(idPet);
-    var apiUrl = 'http://192.168.56.1:8080/api/Board/GetDataByDate';
+    var apiUrl = 'http://192.168.0.7:8080/api/Board/GetDataByDate';
     var urlWithParams = `${apiUrl}?initialDate=${encodeURIComponent(initialDate)}&finalDate=${encodeURIComponent(finalDate)}&idPet=${encodeURIComponent(idPet)}`;
     console.log(urlWithParams)
     fetch(urlWithParams)
