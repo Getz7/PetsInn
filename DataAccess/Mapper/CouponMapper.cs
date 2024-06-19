@@ -33,8 +33,6 @@ namespace DataAccess.Mapper
             operation.AddFloatParam("amountCoupon", coupon.amountCoupon);
             operation.AddDateTimeParam("initialDate", coupon.initialDate);
             operation.AddDateTimeParam("finalDate", coupon.finalDate);
-
-
             return operation;
         }
 

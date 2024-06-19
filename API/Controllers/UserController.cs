@@ -18,7 +18,6 @@ namespace API.Controllers
             return "Controller Working";
         }
 
-
         [HttpPost]
         //Llama al task manager para crear una tarea y guardarla 
         public string CreateUser(DTO.User user){

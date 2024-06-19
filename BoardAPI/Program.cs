@@ -19,7 +19,7 @@ builder.Services.AddCors(options => {
 var app = builder.Build();
 //Expocenfo app.Urls.Add("http://192.168.50.229:8080");
 // dependiendo de la red
-app.Urls.Add("http://192.168.0.7:8080");
+//app.Urls.Add("http://192.168.0.7:8080");
 //app.Urls.Add("http://192.168.0.19:8080");
 //Casa
 //app.Urls.Add("http://192.168.0.5:8080");
